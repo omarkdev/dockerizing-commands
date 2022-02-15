@@ -28,7 +28,7 @@ You can set up the alias:
 alias php="docker run --rm --tty -it \
     -u $(id -u):$(id -g) \
     -v $(pwd):/app \
-    -v $HOME/.ssh:/home/sammy.ssh \
+    -v $HOME/.ssh:/home/sammy/.ssh \
     -w /app \
     omarkdev/cli-php:8.1 \
     php"
@@ -36,7 +36,7 @@ alias php="docker run --rm --tty -it \
 alias composer="docker run --rm --tty -it \
     -u $(id -u):$(id -g) \
     -v $(pwd):/app \
-    -v $HOME/.ssh:/home/sammy.ssh \
+    -v $HOME/.ssh:/home/sammy/.ssh \
     -w /app \
     omarkdev/cli-php:8.1 \
     composer"
