@@ -17,6 +17,7 @@ to run simple commands
 
 - **7.3** - **omarkdev/cli-php:7.3**
 - **8.1** - **omarkdev/cli-php:8.1**
+- **8.2** - **omarkdev/cli-php:8.2**
 
 All versions include composer command.
 
@@ -69,3 +70,13 @@ alias composer="docker run --rm --tty -it \
     omarkdev/cli-php:8.1 \
     composer"
 ```
+
+## How to contribute
+
+All images are inside the `containers` folder, you can create a new one, or update an existing one.
+
+Commands usually used:
+
+- `docker build -t omarkdev/cli-php:8.1 -f containers/php/8.1/`
+- `docker tag omarkdev/cli-php:8.1 omarkdev/cli-php:8.1`
+- `docker push omarkdev/cli-php:8.1`
